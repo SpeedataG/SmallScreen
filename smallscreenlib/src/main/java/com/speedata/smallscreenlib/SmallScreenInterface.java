@@ -24,4 +24,5 @@ public interface SmallScreenInterface {
     public void stopCirculation();
 
     public void writeString(String data, boolean isCirculation, int period,boolean isWake) throws RemoteException;
+    public void writeWholeScreen(byte[] wholebuffer) throws RemoteException;
 }

@@ -101,6 +101,11 @@ public class SmallScreen implements SmallScreenInterface {
         writeThread.start();
     }
 
+    @Override
+    public void writeWholeScreen(byte[] wholebuffer) throws RemoteException {
+        smallScreenManager.writeWholeScreen(wholebuffer);
+    }
+
 
     private String CHToENBiaoDian(String data) {
         String[] regs = {"！", "，", "。", "；", "!", ",", ".", ";"};
